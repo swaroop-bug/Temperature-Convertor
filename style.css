@@ -1,0 +1,66 @@
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }  
+body{
+      background: linear-gradient(0deg, #1e0b27, #9250e2);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items:  center;
+      flex-direction: column;
+      padding: 200px;
+      color: #ffffff;  
+      font-size: 1.6rem;  
+}
+
+button {
+    padding: 12px 32px;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 16px rgba(40, 40, 80, 0.15);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    outline: none;
+    margin-top: 20px;
+}
+
+button:hover, button:focus {
+    background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(40, 40, 80, 0.25);
+}
+
+#result {
+    background: rgba(30, 11, 39, 0.85);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(80, 40, 120, 0.18);
+    padding: 24px 32px;
+    margin-top: 32px;
+    min-width: 260px;
+    text-align: center;
+    border: 1.5px solid #6a11cb;
+    transition: box-shadow 0.2s;
+}
+
+#output {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+#meter {
+    display:flex;
+    height: 30px;      /* Adjust height as needed */
+    width: auto; /* Add padding to the left */
+    margin:  12px;/* Center and add space below */
+    object-fit: contain;
+}
